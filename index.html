@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,55 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Simulador</title>
 </head>
+
 <body>
     <main>
-        <div class="container-principal">
+        <section class="container-principal">
             <h1>Simulador de investimento</h1>
-            
-            <div class="box">
 
-                <div class="input">
-                <label>Capital inicial</label>                
-                    <input type="text" id="capital-inicial" placeholder="0,00" required>
-                    <span>R$</span>
+            <div class="container-secundario">
+
+                <div class="box">
+
+                    <div class="input">
+                        <label>Capital inicial</label>
+                        <input type="text" id="capital-inicial" placeholder="0,00" required>
+                        <span>R$</span>
+                    </div>
+
+                    <div class="input">
+                        <label>Valor mensal</label>
+                        <input type="text" id="valor-mensal" placeholder="0,00" required>
+                        <span>R$</span>
+                    </div>
                 </div>
 
-                <div class="input">
-                <label>Valor mensal</label>                
-                    <input type="text" id="valor-mensal" placeholder="0,00" required>
-                    <span>R$</span>
+                <div class="box">
+
+                    <div class="input">
+                        <label>Taxa de juros</label>
+                        <input type="text" id="taxa-juros" placeholder="0,00" required>
+                        <span>%</span>
+                    </div>
+
+                    <div class="input">
+                        <label>Período</label>
+                        <input type="text" id="periodo" placeholder="Meses" required>
+                    </div>
                 </div>
             </div>
 
-            <div class="box">
+            <section class="buttons">
 
-                <div class="input">
-                <label>Taxa de juros</label>                
-                    <input type="text" id="taxa-juros" placeholder="0,00" required>
-                    <span>%</span>
+                <div class="buttons">
+                    <button class="calcular" id="calcular">Calcular</button>
+                    <button class="limpar" id="limpar">Limpar</button>
                 </div>
+            </section>
+        </section>
 
-                <div class="input">
-                <label>Período</label>                
-                    <input type="text" id="periodo" placeholder="meses" required>                    
-                </div>
-            </div>
     </main>
-    
+
 </body>
+
 </html>
