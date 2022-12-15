@@ -13,16 +13,93 @@
     --tertiary-color:#554667;
     --text-color:#FFFFFF;
     --border-color: #44355E;
-    --icons-color: #810CA8;
+    --icons-color: #4B56D2;
 }
 
 main {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: url(./img/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container-principal h1 {
+    font-size: 3rem;
+    padding: 30px 0;
+    color: var(--text-color);
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    max-width: 1300px;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+.container-secundario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--secondary-color);
+    border: solid var(--border-color);
+    border-radius: 20px;
+    width: 97%;
+    max-width: 1250px;
+    height: auto;
+}
+
+.box {
+    margin: 0 20px;
+}
+
+.container-secundario .input {
+    display: flex;
+    flex-direction: column;
+}
+
+input, label {
+    margin: 10px 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.input input {
+    border:none;
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    height: 4rem;
+}
+
+.input input[type="text"] {
+    padding-left: 90px;
+}
+
+.input input[type="number"] {
+    padding-left: 30px;
+}
+
+.input {
+    position: relative;
+    margin: 30px 0;
+}
+
+.input span {
+    position: absolute;
+    left: 0;
+    top: 49px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--text-color);
+    background-color: var(--icons-color);
+    padding: 13px 20px;
+    border-radius: 10px 0px 0px 10px;
 }
