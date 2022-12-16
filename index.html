@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Simulador</title>
 </head>
 
@@ -42,7 +42,7 @@
 
                     <div class="input">
                         <label>Período</label>
-                        <input type="text" id="periodo" placeholder="Meses" required>
+                        <input type="number" id="periodo" placeholder="Meses" required>
                     </div>
                 </div>
             </div>
@@ -54,6 +54,37 @@
                     <button class="limpar" id="limpar">Limpar</button>
                 </div>
             </section>
+
+            <section class="container-resultado">
+                <div class="icones">
+                <h2>Resultado</h2>
+
+                <div class="i">
+                    <a href="#"> <i class="mdi mdi-share-variant-outline abrir modal"></i></a>
+                    <a href="#" value="imprimir" onclick="window.print()"><i class="mdi mdi-printer-outline"></i></a>
+                </div>
+                </div>
+
+                <div class="campo-resultado">
+                    <div class="box-resultado">
+                        <span>Valor investido</span>
+                        <div class="resultado" id="resultado1"></div>
+                    </div>
+
+                    <div class="box-resultado">
+                        <span>Juros acumulado</span>
+                        <div class="resultado" id="resultado2"></div>
+                    </div>
+
+                    <div class="box-resultado">
+                        <span>Valor total</span>
+                        <div class="resultado" id="resultado3"></div>
+                    </div>
+                </div>
+            </section>
+
+
+
         </section>
 
     </main>
