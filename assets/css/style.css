@@ -136,3 +136,47 @@ input, label {
     width: 100%;
     padding: 10px;
 }
+
+@media (max-width:600px) {
+
+    .container-principal h1 {
+        font-size: 1.4rem;        
+    }
+
+    .container-secundario {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 0 20px 20px 20px;
+    }
+
+    .limpar {
+        letter-spacing: 1px;
+        margin-top: 10px;      
+    }
+
+    .buttons {
+        flex-direction: column;
+        font-size: 2rem;
+        padding: 20px 10px;
+    }
+
+    .input input, box, .input {
+        margin: 0;
+    }
+
+    .input input  {
+        height: 3rem;
+        width: 100%;
+    }
+
+    .input span {
+        top: 35px;
+        left: 0;
+        font-size: 1.5rem;
+        padding: 9px 19px;
+    } 
+    
+    .input label {
+        font-size: 1.3rem;
+    }
+}
