@@ -5,7 +5,7 @@
 .container-resultado {
     width: 97%;
     max-width: 1250px;
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: var(--secondary-color);
     border: solid  var(--border-color);
@@ -73,4 +73,22 @@
 .resultado {
     margin: 30px 0;
     font-size: 2rem;
+}
+
+@media (max-width:600px) {
+
+    .campo-resultado {
+        flex-direction: column;
+        padding-right: 30px;
+    }
+
+    .box-resultado {
+        font-size: 1.5rem;
+        height: auto;
+        margin: 10px;
+    }
+
+    .resultado {
+        margin: 20px 0;
+    }
 }
