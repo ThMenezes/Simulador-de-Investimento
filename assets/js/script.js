@@ -1,7 +1,7 @@
 const resultado1 = document.getElementById('resultado1')
 const resultado2 = document.getElementById('resultado2')
 const resultado3 = document.getElementById('resultado3')
-const calcular = document.getElementById('calular')
+const calcular = document.getElementById('calcular')
 
 function calcularJuros() {
     let capitalInicial = parseFloat(document.getElementById('capital-inicial').value)
@@ -14,7 +14,7 @@ function calcularJuros() {
     let jurosCompostos = 0;
     let jurosCompostoTotal = 0;
 
-    for (let i =0; i < meses; i++) {
+    for (let i =0; i < periodo; i++) {
         jurosCompostos = (capitalInicial * taxaJuros) / 100;
         jurosCompostoTotal += jurosCompostos;
         capitalInicial += jurosCompostos + valorMensal;
@@ -24,15 +24,15 @@ function calcularJuros() {
 
     //formatação de texto//
     let formatacaoValorMontante = new Intl .NumberFormat("pt-BR", {
-        style: "currency", currency: "BTL",
+        style: "currency", currency: "BRL",
     }).format(valorMontante)
 
     let formatacaoJurosCompostoTotal = new Intl .NumberFormat("pt-BR", {
-        style: "currency", currency: "BTL",
+        style: "currency", currency: "BRL",
     }).format(jurosCompostoTotal)
 
     let formatacaoValorTotal = new Intl .NumberFormat("pt-BR", {
-        style: "currency", currency: "BTL",
+        style: "currency", currency: "BRL",
     }).format(valorTotal)
     
     resultado1.textContent = `${formatacaoValorMontante}`
@@ -40,4 +40,13 @@ function calcularJuros() {
     resultado3.textContent = `${formatacaoValorTotal}`
 }
 
-calcular.addEventListener("click", calcularJuros);
+calcular.addEventListener("click", calcularJuros)
+
+// mostrar e ocultar mensagens //
+
+calcular.addEventListener("click", () => {
+    let resultado = document.querySelectorAll(".container-resultado")
+    resultado.forEach((item) => {
+        item.classList.add("active")
+    })
+})
