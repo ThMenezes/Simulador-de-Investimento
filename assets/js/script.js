@@ -60,7 +60,7 @@ limpar.addEventListener("click", ()=> {
     resultado.forEach((item) => {
         item.classList.remove("active")
     })
-    
+
     let capitalInicial = document.getElementById('capital-inicial')
     let valorMensal = document.getElementById('valor-mensal')
     let taxaJuros = document.getElementById('taxa-juros')
@@ -69,4 +69,20 @@ limpar.addEventListener("click", ()=> {
     valorMensal.value = ""
     taxaJuros.value = ""
     periodo.value = ""
+})
+
+// mostrar container modal //
+
+let abrirModal = document.querySelector(".abrir-modal")
+let fecharModal = document.querySelector(".fechar-modal")
+let containerModal = document.querySelector(".container-modal")
+
+abrirModal.addEventListener("click", () => {
+    containerModal.classList.add("active")
+})
+
+// remover container modal //
+
+fecharModal.addEventListener("click", () => {
+    containerModal.classList.remove("active")
 })
