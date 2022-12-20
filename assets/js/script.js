@@ -42,11 +42,31 @@ function calcularJuros() {
 
 calcular.addEventListener("click", calcularJuros)
 
-// mostrar e ocultar mensagens //
+// mostrar resultados //
 
 calcular.addEventListener("click", () => {
     let resultado = document.querySelectorAll(".container-resultado")
     resultado.forEach((item) => {
         item.classList.add("active")
     })
+})
+
+// apagar resultado //
+
+let limpar = document.getElementById("limpar")
+
+limpar.addEventListener("click", ()=> {
+    let resultado = document.querySelectorAll(".container-resultado")
+    resultado.forEach((item) => {
+        item.classList.remove("active")
+    })
+    
+    let capitalInicial = document.getElementById('capital-inicial')
+    let valorMensal = document.getElementById('valor-mensal')
+    let taxaJuros = document.getElementById('taxa-juros')
+    let periodo = document.getElementById('periodo')
+    capitalInicial.value = ""
+    valorMensal.value = ""
+    taxaJuros.value = ""
+    periodo.value = ""
 })
