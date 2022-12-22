@@ -79,11 +79,11 @@ input, label {
     height: 4rem;
 }
 
-.input input[type="text"] {
+.input input[type="number"] {
     padding-left: 90px;
 }
 
-.input input[type="number"] {
+#periodo {
     padding-left: 30px;
 }
 
