@@ -2,6 +2,7 @@
 
 # Simulador de investimento
 
+![Simulador](https://user-images.githubusercontent.com/109250801/208938659-9ad21e1e-595e-4292-b691-864a1b0ba966.png)
 
 </div>
 
@@ -12,6 +13,14 @@
 </div>
 
 Esse projeto tem como objetivo simular a rentabilidade do usuário. Além de visualizar os valores na tela, é possivel que faça a impressão ou compartilhe seu resultado nas através das redes sociais.
+
+<div align="center">
+
+## Aprendizado adquerido:
+
+</div>
+
+Aprendi a utilizar grid css, variáveis em cor, adicionar eventos aos botões com addEventListener, fazer funções para cálculos e conversões de texto com new Intl.NumberFormat.
 
 <div align="center">
 
@@ -40,7 +49,7 @@ https://thmenezes.github.io/Simulador-de-investimento/
 
 <div align="center">
 
-# Planejamento do projeto:
+## Planejamento do projeto:
 
 </div>
 
