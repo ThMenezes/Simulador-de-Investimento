@@ -20,7 +20,23 @@ Esse projeto tem como objetivo simular a rentabilidade do usuário. Além de vis
 
 </div>
 
-Aprendi a utilizar grid css, variáveis em cor, adicionar eventos aos botões com addEventListener, fazer funções para cálculos e conversões de texto com new Intl.NumberFormat.
+Aprendi a utilizar grid css, variáveis em cor, adicionar eventos aos botões com addEventListener, fazer funções para cálculos, conversões de texto com new Intl.NumberFormat e deixar responsivo com media.
+
+<div align="center">
+
+## Imagens do projeto na versão Mobile:
+
+</div>
+
+<div display="inline-block">
+
+![1](https://user-images.githubusercontent.com/109250801/209173259-bd2883a5-cc15-4af5-9ffb-712369c1662e.png)
+![2](https://user-images.githubusercontent.com/109250801/209173271-d068936a-5dcc-4420-bbc3-e3ea26d88bec.png)
+![3](https://user-images.githubusercontent.com/109250801/209173607-7fbe76ed-be94-4bbf-a0f3-f61d760da3e6.png)
+
+
+
+</div>
 
 <div align="center">
 
