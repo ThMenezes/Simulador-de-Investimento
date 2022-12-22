@@ -30,11 +30,9 @@ Aprendi a utilizar grid css, variáveis em cor, adicionar eventos aos botões co
 
 <div display="inline-block">
 
-![1](https://user-images.githubusercontent.com/109250801/209173259-bd2883a5-cc15-4af5-9ffb-712369c1662e.png)
-![2](https://user-images.githubusercontent.com/109250801/209173271-d068936a-5dcc-4420-bbc3-e3ea26d88bec.png)
-![3](https://user-images.githubusercontent.com/109250801/209173607-7fbe76ed-be94-4bbf-a0f3-f61d760da3e6.png)
-
-
+![1](https://user-images.githubusercontent.com/109250801/209175510-e7d8f774-227d-4299-93a0-7147fbbb4915.png)
+![2](https://user-images.githubusercontent.com/109250801/209175524-02bf0e76-22af-454e-953d-9594d315df2d.png)
+![3](https://user-images.githubusercontent.com/109250801/209175532-0a5ed6a1-2a26-411c-bc37-d6e4016aa0c1.png)
 
 </div>
 
